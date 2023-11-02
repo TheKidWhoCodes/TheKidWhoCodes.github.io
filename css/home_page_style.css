@@ -40,11 +40,6 @@ section {
 	cursor: default;
 }
 
-.stars {
-	position: absolute;
-	width: 100vw ;
-}
-
 .titles-container {
 	background-image: var(--gradient-text);
 	-webkit-background-clip: text;

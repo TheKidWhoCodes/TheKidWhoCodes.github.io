@@ -63,18 +63,6 @@ section {
 	-moz-background-clip: text;
 	-moz-text-fill-color: transparent;
 }
-@media screen and (max-width: 722px) {
-    .div-container h1 {
-        font-size: 50px;
-        bottom: 87px;
-    }
-}
-@media screen and (max-width: 495px) {
-    .div-container h1 {
-        font-size: 30px;
-        bottom: 52px;
-    }
-}
 
 .inner-div {
     position: relative;
@@ -131,4 +119,44 @@ hr {
     height: 1px;
     background: linear-gradient(10deg, rgb(75, 148, 194), white); 
     border: none;
+}
+
+
+
+@media screen and (max-width: 952px) {
+    #second-div-title {
+        font-size: 75px;
+        bottom: 130px;
+    }
+}
+
+@media screen and (max-width: 722px) {
+    .div-container h1, #second-div-title {
+        font-size: 50px;
+        bottom: 87px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .div-container h1, #second-div-title {
+        font-size: 30px;
+        bottom: 52px;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    p {
+        font-size: 15px;
+    }
+
+    .div-container h1, #second-div-title {
+        font-size: 25px;
+        bottom: 43px;
+    }
 }
