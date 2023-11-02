@@ -19,8 +19,6 @@ section {
 div img {
     max-width: 50vw;
     max-height: 80vh;
-    /* margin-left: 10vw;
-    margin-right: 10vw; */
 }
 @media screen and (max-width: 1128px) {
 	div img {
