@@ -1,0 +1,124 @@
+/* Ahmad Malki 2140076 */
+
+@font-face {
+    font-family: myFont;
+    src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+:root {
+	--menu-gradient-color: linear-gradient(10deg, rgb(45, 118, 164), silver);
+	--menu-text: silver;
+}
+
+header {
+	position: fixed;
+	bottom: 10%;
+	right: 5%;
+	z-index: 10;
+}
+
+nav a {
+	text-decoration: none;
+	position: absolute;
+	width: max-content;
+	right: 0px;
+	top: -1px;
+	display: flex;
+	align-items: center;
+	text-wrap: nowrap;
+	visibility: hidden;
+	opacity: 0%;
+	color: var(--menu-text);
+	transition: 0.3s;
+	font-size: 16px;
+}
+
+nav a:hover {
+	color: var(--menu-text);
+	margin-right: 5px;
+	text-shadow: rgb(45, 118, 164) 0px 0px 10px;     
+}
+
+nav img {
+	margin-left: 5px;
+	width: 30px;
+	transition: 0.2s all;
+}
+
+.click .animate-first-button {
+	visibility: visible;
+	transform: translateY(-40px);
+	opacity: 100%;
+	transition: 0.5s;
+}
+
+.click .animate-second-button {
+	visibility: visible;
+	transform: translateY(-90px);
+	opacity: 100%;
+	transition: 0.5s;
+}
+
+.click .animate-third-button {
+	visibility: visible;
+	transform: translateY(-140px);
+	opacity: 100%;
+	transition: 0.5s;
+}
+
+.click .animate-fourth-button {
+	visibility: visible;
+	transform: translateY(-190px);
+	opacity: 100%;
+	transition: 0.5s;
+}
+
+/* CSS I've taken from other people on the internet */
+
+/* Start of menu button CSS */
+.header__hamburger {
+	position: relative;
+	right: 0;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.header__hamburger>div {
+	position: relative;
+}
+
+.bar {
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-image: var(--menu-gradient-color);
+	transition: 0.5s;
+	left: -15px;
+}
+
+.hamburger__bar1 {
+	top: -8px;
+}
+
+.hamburger__bar3 {
+	top: 8px;
+}
+
+.click .hamburger__bar1 {
+	transform: rotate(-45deg);
+	top: 0;
+	background-image: linear-gradient(90deg, rgb(45, 118, 164), silver);
+}
+
+.click .hamburger__bar2 {
+	transition-duration: 200ms;
+	opacity: 0;
+}
+
+.click .hamburger__bar3 {
+	transform: rotate(45deg);
+	top: 0;
+	background-image: linear-gradient(12deg, rgb(45, 118, 164), silver);
+}
+
+/* End of menu button CSS */

@@ -1,0 +1,235 @@
+/* Ahmad Malki 2140076 */
+
+@font-face {
+	font-family: titlesFont;
+	src: url("../assets/fonts/Montserrat-Bold.ttf");
+}
+
+:root {
+	--first-section-background: linear-gradient(0deg, #0E1116, rgb(0, 5, 15));
+	/* --gradient-text: linear-gradient(20deg, rgb(104, 157, 191), rgb(163, 163, 163)); */
+	--gradient-text: linear-gradient(10deg, rgb(75, 148, 194), white);
+	--hr-color: rgb(25, 5, 80);
+	--second-section-background: linear-gradient(0deg, #0a0c10, #0E1116);
+	--second-section-text: rgb(180, 201, 219);
+	--second-section-button-background: linear-gradient(20deg, rgb(104, 157, 191), silver);
+	--second-section-button-highlight: silver;
+}
+
+/* Header and first section */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: myFont;
+	background-color: black;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.first-section {
+	background-image: var(--first-section-background);
+	font-family: titlesFont;
+	font-size: 5vw;
+	text-shadow: rgb(110, 110, 110) -1px 3px 50px;
+	cursor: default;
+}
+
+.stars {
+	position: absolute;
+	width: 100vw ;
+}
+
+.titles-container {
+	background-image: var(--gradient-text);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	/* For compatibility */
+	background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+/* Second section */
+
+.second-section {
+	background-image: var(--second-section-background);
+}
+
+#main-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 90vw;
+}
+
+#name {
+	display: inline;
+	background-image: var(--gradient-text);
+	font-size: 70px;
+	font-weight: normal;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: rgb(84, 84, 84) 0px 0px 40px;
+
+	/* For compatibility */
+	background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.second-section p {
+	display: block;
+	color: var(--second-section-text);
+	font-size: 2em;
+	line-height: 1.5;
+	text-shadow: rgb(84, 84, 84) 0px 0px 10px;
+}
+
+#buttons-container a {
+	position: relative;
+	margin-right: 5px;
+	padding: 8px 25px;
+	text-decoration: none;
+	text-wrap: nowrap;
+	color: var(--second-section-text);
+	border: solid var(--second-section-text);
+	border-radius: 30px;
+	box-shadow: -1px 3px var(--second-section-text);
+	transition: 0.2s;
+	transition-property: color, border;
+}
+
+#buttons-container a:hover {
+	color: #0E1116;
+	background-image: var(--second-section-button-background);
+	border-color: var(--second-section-button-highlight);
+	top: 3px;
+	right: 1px;
+	box-shadow: 0px 0px 10px var(--second-section-text);
+}
+
+#socials-container {
+	margin-top: 40px;
+	cursor: default;
+}
+
+#socials-container a {
+	margin-right: 10px;
+}
+
+#socials-container img {
+	width: 20px;
+	height: 20px;
+	transition: 0.2s all;
+	/* object-fit: scale-down; */
+}
+
+#socials-container img:hover {
+	transform: translateY(-5px);
+}
+
+#arrow img {
+	width: 21vw;
+	transition: 0.5s all;
+}
+
+#arrow img:hover {
+	transform: translateX(10px);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 936px) {
+	.second-section {
+		font-size: max(1.5vw, 10px);
+	}
+
+	#main-container {
+		width: 100vw;
+	}
+
+	#name {
+		font-size: max(5vw, 34px);
+	}
+
+	#buttons-container a {
+		padding: 1vw 2vw;
+		box-shadow: none;
+	}
+	
+	#socials-container img {
+		width: max(2.3vw, 17px);
+		height: max(2.3vw, 17px);
+	}
+
+	#arrow img {
+		min-width: 150px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.second-section {
+		font-size: 12px;
+	}
+
+	#main-container {
+		flex-direction: column;
+		width: fit-content;
+		align-items: end;
+	}
+
+	#name {
+		font-size: 34px;
+	}
+
+	#buttons-container a {
+		padding: 5px 10px;
+		border: solid 1px var(--second-section-text);
+	}
+
+	#socials-container img {
+		width: 16px;
+		height: 16px;
+	}
+
+	#arrow {
+		position: absolute;
+		top: 95px;
+	}
+
+	#arrow img {
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	#main-container {
+		margin: 0px 10px;
+	}
+
+	#arrow {
+		top: 131px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	#main-container {
+		align-items: center;
+	}
+
+	#socials-container {
+		margin-top: 30px;
+	}
+
+	#arrow {
+		position: static;
+	}
+}

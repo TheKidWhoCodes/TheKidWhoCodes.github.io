@@ -1,0 +1,104 @@
+<!-- Ahmad Malki 2140076 -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ahmad Malki</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Personal Website">
+        <meta name="keywords" content="Personal Website, Software Engineer, Video Game Developer">
+        <meta name="author" content="Ahmad Malki">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/menu_style.css">
+        <link rel="stylesheet" href="css/home_page_style.css">
+        <link rel="icon" type="Image/x-icon" href="assets/images/Site_Icon.png">
+        
+        <!-- CSS from people on the internet -->
+
+        <!-- Text animations -->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav class="header__hamburger" onclick="toggleMenu()">
+                <div>
+                   <div class="bar hamburger__bar1"></div>
+                   <div class="bar hamburger__bar2"></div>
+                   <div class="bar hamburger__bar3"></div>
+                </div>
+
+                <a href="index.html" class="animate-first-button">HOME<img src="assets/images/Home_Button.png" alt="Home Image"></a>
+                <a href="AboutPage.html" class="animate-second-button">ABOUT ME<img src="assets/images/About_Button.png" alt="About Image"></a>
+                <a href="ProjectsPage.html" class="animate-third-button">PROJECTS<img src="assets/images/Projects_Button.png" alt="Projects Image"></a>
+                <a href="ContactPage.html" class="animate-fourth-button">CONTACT ME<img src="assets/images/Mail_Button.png" alt="Mail Image"></a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="first-section">
+                <div class="titles-container">
+                    <span class="titles"></span>
+                </div>
+            </section>
+            <section class="second-section">
+                <div id="main-container">
+                   <div>
+                        <h1 id="name" data-aos="fade-in">
+                            AHMAD MALKI
+                        </h1>
+
+                        <p data-aos="fade-right">
+                            <em>“If you can dream it, you can do it.” <br> — Walt Disney</em>
+                        </p>
+                        
+                        <div id="buttons-container" data-aos="fade-right">
+                            <a href="ProjectsPage.html">PROJECTS</a>
+                            <a href="ContactPage.html">CONTACT ME</a>
+                        </div>
+
+                        <div id="socials-container" data-aos="fade-right">
+                            <a href="https://github.com/TheKidWhoCodes"><img src="assets/images/socials/Github.png" alt="Github logo"></a>
+                            <a href="https://www.instagram.com/the.kid.who.codes/"><img src="assets/images/socials/Instagram.png" alt="Instagram logo"></a>
+                            <a href="https://twitter.com/TheKidWhoCodes"><img src="assets/images/socials/X.png" alt="X logo"></a>
+                            <a href="https://www.linkedin.com/in/ahmad-malki/"><img src="assets/images/socials/Linkedin.png" alt="Linkedin logo"></a>
+                        </div>
+                   </div>
+                   
+                   <a href="AboutPage.html" id="arrow" data-aos="fade-right"><img src="assets/images/Arrow_Button.png" alt="Arrow Image" ></a>
+                </div>
+            </section>
+        </main>
+
+        
+        
+
+
+
+        
+        <!-- JS from people on the internet -->
+
+        <!-- "Typed" script taken from a GitHub repo -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(
+                ".titles",
+                {
+                    strings: ["SOFTWARE ENGINEER", "WEB DEVELOPER", "VIDEO GAME DEVELOPER", "UI DESIGNER"],
+                    typeSpeed: 100,
+                    backSpeed: 50,
+                    loop: true,
+                    cursorChar: "|"
+                }
+            )
+        </script>
+
+        <!-- Menu button script -->
+        <script src="js/MenuButton.js"></script>
+
+        <!-- Text animations script -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script> AOS.init(); </script>
+    </body>
+</html>
