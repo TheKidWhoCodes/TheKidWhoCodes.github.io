@@ -170,7 +170,7 @@ section {
 	}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {	/* TODO: Shorten p width */
 	.second-section {
 		font-size: 12px;
 	}
