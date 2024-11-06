@@ -176,13 +176,14 @@ section {
 /* Iphone size */
 @media screen and (max-width: 550px) {
 	.second-section {
-		font-size: 12px;
+		/* font-size: 12px; */
+		font-size: 3vw;
 	}
 
 	#main-container {
 		flex-direction: column;
 		width: fit-content;
-		align-items: end;
+		align-items: center;
 	}
 
 	#name {
@@ -190,12 +191,16 @@ section {
 	}
 
 	.second-section p {
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 
 	#buttons-container a {
 		padding: 5px 10px;
 		border: solid 1px var(--second-section-text);
+	}
+
+	#socials-container {
+		margin-top: 30px;
 	}
 
 	#socials-container img {
@@ -204,16 +209,15 @@ section {
 	}
 
 	#arrow {
-		position: absolute;
-		top: 120px;
+		position: static;
 	}
 
-	#arrow img {
+	/* #arrow img {
 		width: 150px;
-	}
+	} */
 }
 
-@media screen and (max-width: 440px) {
+/* @media screen and (max-width: 440px) {
 	#main-container {
 		margin: 0px 10px;
 	}
@@ -221,9 +225,9 @@ section {
 	#arrow {
 		top: 95px;
 	}
-}
+} */
 
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 390px) {
 	#main-container {
 		align-items: center;
 	}
@@ -235,4 +239,4 @@ section {
 	#arrow {
 		position: static;
 	}
-}
+} */
