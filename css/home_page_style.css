@@ -173,7 +173,8 @@ section {
 	}
 }
 
-@media screen and (max-width: 550px) {	/* TODO: Shorten p width */
+/* Iphone size */
+@media screen and (max-width: 550px) {
 	.second-section {
 		font-size: 12px;
 	}
@@ -188,6 +189,10 @@ section {
 		font-size: 34px;
 	}
 
+	.second-section p {
+		font-size: 1.5em;
+	}
+
 	#buttons-container a {
 		padding: 5px 10px;
 		border: solid 1px var(--second-section-text);
@@ -200,7 +205,7 @@ section {
 
 	#arrow {
 		position: absolute;
-		top: 95px;
+		top: 120px;
 	}
 
 	#arrow img {
@@ -208,15 +213,15 @@ section {
 	}
 }
 
-@media screen and (max-width: 440px) {
+/* @media screen and (max-width: 440px) {
 	#main-container {
 		margin: 0px 10px;
 	}
 
 	#arrow {
-		top: 131px;
+		top: 120px;
 	}
-}
+} */
 
 @media screen and (max-width: 390px) {
 	#main-container {
