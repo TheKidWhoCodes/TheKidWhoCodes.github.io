@@ -213,7 +213,7 @@ section {
 	}
 }
 
-/* @media screen and (max-width: 440px) {
+@media screen and (max-width: 440px) {
 	#main-container {
 		margin: 0px 10px;
 	}
@@ -221,7 +221,7 @@ section {
 	#arrow {
 		top: 120px;
 	}
-} */
+}
 
 @media screen and (max-width: 390px) {
 	#main-container {
