@@ -80,12 +80,15 @@ section {
 	-moz-text-fill-color: transparent;
 }
 
+/* Quote */
 .second-section p {
 	display: block;
 	color: var(--second-section-text);
-	font-size: 2em;
+	font-size: 1.7em;
 	line-height: 1.5;
 	text-shadow: rgb(84, 84, 84) 0px 0px 10px;
+	width: 20em;
+    text-align: justify;
 }
 
 #buttons-container a {
