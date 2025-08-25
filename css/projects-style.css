@@ -72,6 +72,24 @@ h2 {
     color: var(--second-section-text);
 }
 
+.title .link {
+    height: 20px;
+    width: auto;
+    border-radius: 0px;
+    /* border: solid 1px var(--second-section-text);
+    border-radius: 100%; */
+}
+
+a {
+    color: var(--second-section-text);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--second-section-text);
+    text-shadow: rgb(45, 118, 164) 0px 0px 10px;
+}
+
 @media screen and (max-width: 1128px) {
     .projectDiv {
         flex-direction: column;
