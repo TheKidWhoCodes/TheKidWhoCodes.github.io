@@ -114,6 +114,11 @@ a:hover {
         width: 100%;
     }
 
+    .title .link {
+        height: max(15px, 2vw);
+        width: auto;
+    }
+
     /* #firstDiv {
         margin-top: 200px;
     } */
