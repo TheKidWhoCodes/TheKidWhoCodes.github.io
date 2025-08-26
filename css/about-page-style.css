@@ -97,7 +97,7 @@ section {
     color: rgb(30, 36, 49);
     background-color: rgb(180, 201, 219);
     border-radius: 10px;
-    height: fit-content;
+    height: 25px;
     text-wrap: nowrap;
     text-align: start;
 }

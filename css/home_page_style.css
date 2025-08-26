@@ -143,6 +143,14 @@ section {
 	transform: translateX(10px);
 }
 
+#check-out-image {
+	width: max(175px, 15vw);
+	height: auto;
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 936px) {
@@ -175,6 +183,10 @@ section {
 
 /* Iphone size */
 @media screen and (max-width: 550px) {
+	.titles-container {
+		margin-top: -100px;
+	}
+
 	.second-section {
 		/* font-size: 12px; */
 		font-size: 3vw;
@@ -214,6 +226,10 @@ section {
 
 	/* #arrow img {
 		width: 150px;
+	} */
+
+	/* #check-out-image {
+		bottom: 10%;
 	} */
 }
 
