@@ -228,9 +228,10 @@ section {
 		width: 150px;
 	} */
 
-	/* #check-out-image {
-		bottom: 10%;
-	} */
+	#check-out-image {
+		width: 175px;
+		/* bottom: 10%; */
+	}
 }
 
 /* @media screen and (max-width: 440px) {
