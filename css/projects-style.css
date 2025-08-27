@@ -62,6 +62,10 @@ p {
     mix-blend-mode: difference;
 }
 
+.carousel-item {
+    min-height: 200px;
+}
+
 .carousel-item p {
     color: var(--second-section-text);
     text-shadow: rgb(84, 84, 84) 0px 1px 2px;
