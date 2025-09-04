@@ -31,6 +31,10 @@ section {
     overflow: hidden;
 }
 
+#firstDiv {
+    margin-top: 12vw;
+}
+
 .projectDiv {
     color: var(--second-section-text);
     font-family: myFont;
@@ -76,22 +80,23 @@ h2 {
     color: var(--second-section-text);
 }
 
-.title .link {
-    height: 20px;
-    width: auto;
-    border-radius: 0px;
-    /* border: solid 1px var(--second-section-text);
-    border-radius: 100%; */
-}
-
-a {
+.title-div a {
+    font-size: 1.3vw;
     color: var(--second-section-text);
     text-decoration: none;
+    margin-top: 2px;
 }
 
 a:hover {
     color: var(--second-section-text);
     text-shadow: rgb(45, 118, 164) 0px 0px 10px;
+    text-decoration: underline;
+}
+
+.title-div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 @media screen and (max-width: 1128px) {
@@ -102,6 +107,15 @@ a:hover {
         margin-bottom: 50px;
         /* margin-right: 10px;
         margin-left: 10px; */
+    }
+
+    .title-div {
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    .title-div a {
+        font-size: max(14px, 1.5vw);
     }
     
     .title {
@@ -117,13 +131,4 @@ a:hover {
     .projectDiv img {
         width: 100%;
     }
-
-    .title .link {
-        height: max(15px, 2vw);
-        width: auto;
-    }
-
-    /* #firstDiv {
-        margin-top: 200px;
-    } */
 }

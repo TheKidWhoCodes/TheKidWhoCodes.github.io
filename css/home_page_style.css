@@ -151,6 +151,18 @@ section {
 	bottom: 5%;
 }
 
+#stars-div {
+	position: absolute;
+	width: 100vw;
+	top: 0px;
+	overflow: hidden;
+}
+
+#stars {
+	display: block;
+	object-fit: cover;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 936px) {
@@ -223,7 +235,7 @@ section {
 	#arrow {
 		position: static;
 	}
-
+	
 	/* #arrow img {
 		width: 150px;
 	} */
