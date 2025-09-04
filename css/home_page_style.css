@@ -151,7 +151,8 @@ section {
 	bottom: 5%;
 }
 
-#stars-div {
+/* Stars CSS */
+/* #stars-div {
 	position: absolute;
 	width: 100vw;
 	top: 0px;
@@ -161,7 +162,7 @@ section {
 #stars {
 	display: block;
 	object-fit: cover;
-}
+} */
 
 /* Media queries */
 
